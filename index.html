@@ -7,7 +7,7 @@
     <title>Weather App</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
@@ -16,6 +16,44 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <script src="./js/script.js"></script>
+    <div class="container">
+      <!-- Search line -->
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your location" />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <!-- Error Notification -->
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+
+      <!-- Weather Block -->
+      <div class="weather">
+        <div class="weather-image">
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+        <h1 class="temp">22 &#8451</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <i class="fa-solid fa-water"></i>
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-wind"></i>
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
